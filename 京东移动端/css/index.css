@@ -1,0 +1,178 @@
+body {
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    font-family: -apple-system, Helvetica, sans-serif;
+    color: #666;
+    line-height: 1.5;
+    background-color: rgb(189, 189, 189);
+} 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    /* 去除图片自身所带的空隙 */
+    vertical-align: middle;
+}
+.app {
+    height: 45px;
+}
+.app ul li {
+    height: 45px;
+    float: left;
+    background-color: #333333;
+    text-align: center;
+    color: #fff;
+    line-height: 45px;
+}
+.app ul li:nth-child(1) {
+    width: 8%;
+}
+
+.app ul li:nth-child(1) img {
+    width: 10px;
+}
+
+.app ul li:nth-child(2) {
+    width: 10%;
+}
+
+.app ul li:nth-child(2) img {
+    width: 30px;
+    /* 让图片和基线对齐 */
+    vertical-align: middle;
+}
+
+.app ul li:nth-child(3) {
+    width: 57%;
+}
+
+.app ul li:nth-child(4) {
+    width: 25%;
+    background-color: #F63515;
+}
+.search-wrap {
+    overflow: hidden;
+    height: 44px;
+    line-height: 44px;
+    /* 加了固定定位的盒子要有宽度 */
+    position: fixed;
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+}
+.search-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 44px;
+    width: 40px;
+}
+.search-btn::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 18px; 
+    background: url(../images/s-btn.png) no-repeat;
+    background-size: 20px 18px;
+    margin: 14px 0 0 15px;
+}
+.search-login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 44px;
+    width: 40px;
+    color: #fff;
+}
+.search {
+    position: relative;
+    height: 30px;
+    margin: 0 50px;
+    margin-top: 7px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+.jd-icon {
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    left: 13px; 
+    background: url(../images/jd.png) no-repeat; 
+    background-size: 20px 15px;
+}
+.jd-icon::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+    position: absolute;
+    top: 0;
+    right: -8px;
+}
+.sou {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    left: 50px; 
+    background-color: pink;
+    /* 精灵图先缩小一半 然后定位 */
+    background: url(../images/jd-sprites.png) no-repeat -83px 0;
+    background-size: 200px auto;
+}
+.slider img {
+    width: 100%;
+}
+.brand div {
+    float: left;
+    width: 33.333333%;
+}
+/* 图片不一样大  记得和父亲盒子一样大 */
+.brand div img {
+    width: 100%;
+}
+nav a {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+nav a img {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+}
+nav a span {
+    display: block;
+    font-size: 13px;
+}
+.news a {
+    box-sizing: border-box;
+    float: left;
+}
+.news a:nth-child(1){
+    width: 50%;
+}
+.news a:nth-child(2){
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    width: 25%;
+}
+.news a:nth-child(3){
+    width: 25%;
+}
+.news a img {
+    width: 100%;
+}
+.news a:nth-child(2) img {
+    margin-top: 1px;
+}
+
